@@ -48,7 +48,9 @@ class BinarySearchTree:
         # Return True if the tree contains the value
         # False if it does not
         while self:
-            if target is self.value:
+            # print(self.value)
+            # print(target)
+            if target == self.value:
                 return True
             elif target < self.value:
                 if not self.left:
